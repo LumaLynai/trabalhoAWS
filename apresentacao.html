@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="apresentacao.css">
+
+    <title>Website</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="escolanuvem.png" alt="Escola da Nuvem">
+    </header>
+    <main>
+        <div>
+            <section class='center'>
+                <h1>Projeto Website para Divulgação de Currículo</h1>
+            </section>
+
+            <section class="subtitle"> Objetivo </section>
+            <div class="corpo">
+                Desenvolvimento de um website (html, css, imagens) contendo os currículos do grupo
+                e a implantação de um ou mais serviços na nuvem AWS, com rede de entrega de
+                conteúdo, com baixa latência, com segurança, e armazenamento durável, para
+                atender a demanda de 11 milhões de requisições do tipo get e select por mês.
+            </div>
+
+            <section class="title">Tecnologias</section>
+            <section class="subtitle">AWS S3 Standard</section>
+            <div class="corpo">
+                <ul>
+                    <p>
+                        <li>
+                            Amazon Simple Storage Service (AWS S3), é um serviço de armazenamento 
+                            virtual ilimitado de objetos, compartilhamento de arquivos ou criação
+                            de Website estático, repositório de data lakes e análise de big data
+                            oferecendo baixa latência e alta velocidade, com durabilidade de
+                             99,999999999 % (onze noves) e disponibilidade de 99,99%, com sete classes de armazenamento
+
+
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Será utilizado o serviço  AWS S3 Standard para armazenamento de objetos, 
+                            com políticas de restrição de acesso apenas pelo endereço do site 
+
+                        </li>
+                    </p>
+                </ul>
+            </div>
+            <section class="subtitle">AWS Route53</section>
+            <div class="corpo">
+                <ul>
+                    <p>
+                        <li>
+                            O serviço AWS Route53 será utilizado para resolução do domínio e criação das <br>
+                            zonas de dns necessárias para realizar o acesso seguro.
+                        </li>
+                    </p>
+                </ul>
+            </div>
+            <section class="subtitle">AWS Certificate Manager</section>
+            <div class="corpo">
+                <ul>
+                    <p>
+                        <li>
+                            Este serviço será usado para gerar um certificado ssl para o site, permitindo o<br>
+                            uso de segurança ssl para o domínio.
+                        </li>
+                    </p>
+                </ul>
+            </div>
+            <section class="subtitle">AWS CloudFront</section>
+            <div class="corpo">
+                <ul>
+                    <p>
+                        <li>
+                            Este serviço será utilizado para permitir a integração do certificado ssl ao domínio,<br>
+                             restringindo o acesso somente pelo site e não diretamente pelo bucket S3.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            Também ajustará as políticas de acesso, permitindo acesso global com rede de<br>
+                            entrega de contúdo e com baixa latência como solicitado nos objetivos.
+                        </li>
+                    </p>
+                </ul>
+            </div>
+            
+            <section class="title">Arquitetura</section>
+            <section class="subtitle">Diagram projeto Website</section>
+            <img class="arqui" src="arquitetura.png" alt="Arquitetura">
+
+            <section class="title">Proposta</section>
+            <section class="subtitle">
+              Link:  <a class="link" href="https://calculator.aws/#/estimate?id=85cf880367d12a9d0a6a61d1ccf8d08ba05471f3">Princing Calculator</a>
+            </section>
+            <img class="calculator" src="calculo.png" alt="Calculator">
+            <section class="corpo">
+            </section>
+            <section class="title">Website Divulgação de currículos</section>
+            <img class="qr" src="qrcode.png" alt="QRCode">
+
+            <section class="subtitle"><hr>Grupo 05</section>
+            <section class="corpo">
+                <ul>
+                    Pierre Duque <br>
+                    Paulo Ronaldo da Rosa<br>
+                    Luma Taynara Guimarães Yoshida<br>
+                    Marco Vinicius Morceli Kameoka <br>
+                </ul>
+            </section>
+            
+            <footer>
+                Prof.: Gabriel Machado<br>
+                Mentor: Rafael Estima
+            </footer>
+
+            <section class="right">
+                <button>
+                    <a href="index.html">Inicío</a>
+                </button>
+            </section>
+        </div>
+
+
+
+
+    </main>
+
+</body>
+
+</html>
